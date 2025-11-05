@@ -156,7 +156,7 @@ void UMSHMenu::HostButtonClicked()
 	HostButton->SetIsEnabled(false);
 	if (MSHSubsystem)
 	{
-		MSHSubsystem->CreateSession(NumConnections, MatchType);
+		MSHSubsystem->CreateSession(NumConnections, MatchType, false);
 	} else
 	{
 		UE_LOG(LogTemp, Error, TEXT("Session could not be created because the MSHSubsystem is null."))
